@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Start out by installing package dependencies
-sudo apt-get install lighttpd tomcat6
+sudo apt-get install lighttpd tomcat6 curl
 
 # Configure Tomcat: Set port number to 9001
 sudo sed -i 's/8080/9001/g' /var/lib/tomcat6/conf/server.xml
