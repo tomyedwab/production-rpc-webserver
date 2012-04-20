@@ -896,8 +896,9 @@
    <field name="id" type="string" indexed="true" stored="true" required="true"/>
    <field name="key_id" type="int" indexed="false" stored="true"/>
    <field name="parent_topic" type="string" indexed="false" stored="true"/>
-   <field name="child_topics" type="string" indexed="false" stored="true"/>
    <field name="kind" type="string" indexed="false" stored="true"/>
+   <field name="child_topics" type="string" indexed="false" stored="true"/>
+   <field name="related_exercises" type="string" indexed="false" stored="true"/>
 
    <field name="version" type="int" indexed="true" stored="true"/>
    <field name="title" type="text_general" indexed="true" stored="true"/>
