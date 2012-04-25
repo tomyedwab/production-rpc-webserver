@@ -13,7 +13,7 @@ sudo apt-get install lighttpd tomcat6 curl
 sudo sed -i 's/8080/9001/g' /var/lib/tomcat6/conf/server.xml
 
 # Copy configuration data
-sudo ln -s /home/ubuntu/config/solr_tomcat_context.xml /var/lib/tomcat6/conf/Catalina/localhost/solr.xml
+sudo ln -s /home/ubuntu/production-rpc-webserver/config/solr_tomcat_context.xml /var/lib/tomcat6/conf/Catalina/localhost/solr.xml
 
 # Set permissions so that Tomcat can read the files
 sudo chown -R tomcat6:tomcat6 solr
@@ -26,7 +26,7 @@ sudo /etc/init.d/tomcat6 restart
 
 # Configure lighttpd to redirect requests:
 #   search-rpc.khanacademy.org => localhost:9001 (Tomcat)
-sudo ln -s /home/ubuntu/config/lighttpd.conf /etc/lighttpd/lighttpd.conf
+sudo ln -s /home/ubuntu/production-rpc-webserver/config/lighttpd.conf /etc/lighttpd/lighttpd.conf
 
 # Restart lighttpd to pick up our changes
 sudo /etc/init.d/lighttpd restart
