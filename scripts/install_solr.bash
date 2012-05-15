@@ -5,8 +5,8 @@
 
 # This script assumes an Ubuntu 11.10 server and home directory /home/ubuntu.
 # This git repository should be cloned into /home/ubuntu/production-rpc-webserver.
-set REPO_ROOT = /home/ubuntu/production-rpc-webserver
-set SCRIPT_ROOT = $REPO_ROOT/scripts
+export REPO_ROOT=/home/ubuntu/production-rpc-webserver
+export SCRIPT_ROOT=$REPO_ROOT/scripts
 
 # Start out by installing package dependencies
 sudo apt-get install lighttpd tomcat6 curl
