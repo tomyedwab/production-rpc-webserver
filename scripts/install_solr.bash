@@ -9,7 +9,7 @@ export REPO_ROOT=/home/ubuntu/production-rpc-webserver
 export SCRIPT_ROOT=$REPO_ROOT/scripts
 
 # Start out by installing package dependencies
-sudo apt-get install lighttpd tomcat6 curl
+sudo apt-get install lighttpd tomcat6 curl mailutils moreutils
 
 # Configure Tomcat: Set port number to 9001
 sudo sed -i 's/8080/9001/g' /var/lib/tomcat6/conf/server.xml
