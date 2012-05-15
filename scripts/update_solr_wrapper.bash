@@ -9,4 +9,4 @@ export REPO_ROOT=/home/ubuntu/production-rpc-webserver
 export SCRIPT_ROOT=$REPO_ROOT/scripts
 
 # TODO (tom): Find the right mailing list to send this error out to
-$SCRIPT_ROOT/cronic.bash $SCRIPT_ROOT/update_solr.bash | ifne mail -E -s "Error occurred while updating the search index on search-rpc!" tom@khanacademy.org
+$SCRIPT_ROOT/cronic.bash $SCRIPT_ROOT/update_solr.bash | ifne mail -s "Error occurred while updating the search index on search-rpc!" tom@khanacademy.org
